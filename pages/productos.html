@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/Favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../estilos/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <title>Productos</title>
+</head>
+
+<body>
+
+    <div class="grid-layout">
+
+        <header class="header">
+
+            <section class="flexbox-header">
+
+                <div class="flexbox-header-item">
+                    <img class="logo" src="../img/LogoServiceAlarcón.webp" alt="Logo">
+                </div>
+
+                <div class="flexbox-header-item">
+                    <nav>
+                        <ul class="nav-list">
+                            <li><a href="../index.html">Inicio</a></li>
+                            <li class="menúDesplegable"><a href="#">Servicios</a>
+                                <ul class="menúDesplegable-contenido">
+                                    <li><a href="../pages/aires acondicionados.html">Aires Acondicionados</a></li>
+                                    <li><a href="../pages/en construccion.html">Heladeras</a></li>
+                                    <li><a href="../pages/en construccion.html">Lavarropas</a></li>
+                                    <li><a href="../pages/en construccion.html">Otros Servicios</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="../pages/contacto.html">Contacto</a></li>
+                            <li><a class="acarrito" href="../pages/carrito.html"><img class="IconCarrito"
+                                        src="../img/iconos/carrito.svg" alt="carrito de compra"> <span
+                                        id="contador-carrito">0</span></a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+            </section>
+
+        </header>
+
+        <main class="contenido">
+
+            <h1 class="Titulocentrado2">Nuestros productos</h1>
+
+            <section id="Contenedor-Productos" class="Contenedor-Productos">
+
+                <div class="producto">
+                    <img src="../img/Aire Acondicionado producto 01.webp" alt="Aire Acondicionado producto 01">
+                    <h3 class="Titulocentrado2">Aire Acondicionado Split Enova Aes12Nx10-Tdf Frio/Calor 3000 Watts</h3>
+                    <p class="Parrafo-centrado" class="precio">$955.499</p>
+                    <button
+                        onclick="agregarAlcarrito('Aire Acondicionado Split Enova Aes12Nx10-Tdf Frio/Calor 3000 Watts', 955)"
+                        class="boton">Agregar al carrito</button>
+                </div>
+
+                <div class="producto">
+                    <img src="../img/Heladera Producto 02.webp" alt="Heladera Producto 02">
+                    <h3 class="Titulocentrado2">Heladera Con Freezer Gafa 286 L Hgf358Afp Gris</h3>
+                    <p class="Parrafo-centrado" class="precio">$837.999</p>
+                    <button onclick="agregarAlcarrito('Heladera Con Freezer Gafa 286 L Hgf358Afp Gris', 837)"
+                        class="boton">Agregar al carrito</button>
+                </div> 
+
+                <div class="producto">
+                    <img src="../img/Lavarropas Producto 03.webp" alt="Lavarropas Producto 03">
+                    <h3 class="Titulocentrado2">Lavarropas Automatico Hisense Wfmb6510Su 6,5Kg Gris</h3>
+                    <p class="Parrafo-centrado" class="precio">$818.999</p>
+                    <button onclick="agregarAlcarrito('Lavarropas Automatico Hisense Wfmb6510Su 6,5Kg Gris', 818)"
+                        class="boton">Agregar al carrito</button>
+                </div>
+
+                <div class="producto">
+                    <img src="../img/Secarropas Producto 04.webp" alt="Secarropas Producto 04">
+                    <h3 class="Titulocentrado2">Secarropas Columbia 5.5Kg Hts-5503 Turquesa Linea Colors</h3>
+                    <p class="Parrafo-centrado" class="precio">$190.999</p>
+                    <button onclick="agregarAlcarrito('Secarropas Columbia 5.5Kg Hts-5503 Turquesa Linea Colors', 190)"
+                        class="boton">Agregar al carrito</button>
+                </div>
+
+                <div class="producto">
+                    <img src="../img/Calefactor sin Salida Producto 05.webp" alt="Calefactor sin Salida Producto 05">
+                    <h3 class="Titulocentrado2">Calefactor Sin Salida Volcan 4000 43516VN Gas Natural</h3>
+                    <p class="Parrafo-centrado" class="precio">$246.499</p>
+                    <button onclick="agregarAlcarrito('Calefactor Sin Salida Volcan 4000 43516VN Gas Natural', 246)"
+                        class="boton">Agregar al carrito</button>
+                </div>
+
+                <div class="producto">
+                    <img src="../img/Aire Acondicionado Ventana producto 06.webp"
+                        alt="Aire Acondicionado Ventana producto 06">
+                    <h3 class="Titulocentrado2">Aire Acondicionado Ventana Bgh Silent Air Bc52Wfq 5100 Watts</h3>
+                    <p class="Parrafo-centrado" class="precio">$1.273.999</p>
+                    <button
+                        onclick="agregarAlcarrito('Aire Acondicionado Ventana Bgh Silent Air Bc52Wfq 5100 Watts', 1273)"
+                        class="boton">Agregar al carrito</button>
+                </div>
+
+            </section>
+
+        </main>
+
+        <footer class="footer">
+
+            <section>
+                <h3 class="subtitulos">Nuestras Redes</h3>
+                <ul class="Social">
+                    <li> <a href="#" target="_blank" rel="noopener noreferrer"><img class="Icon"
+                                src="../img/iconos/facebook.svg" alt="facebook"></a></li>
+                    <li><a href="#" target="_blank" rel="noopener noreferrer"><img class="Icon"
+                                src="../img/iconos/instagram.svg" alt="instagram"></a></li>
+                </ul>
+            </section>
+
+            <section class="copyright">
+                <h3 class="subtitulos">© 2024 Service Alarcón. Todos los derechos reservados.</h3>
+            </section>
+
+        </footer>
+
+    </div>
+
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="../JS/productos.js"></script>
+</body>
+
+</html>

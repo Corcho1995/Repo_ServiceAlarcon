@@ -1,0 +1,485 @@
+/* Estilos generales*/
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Oswald", sans-serif;
+}
+
+.grid-layout {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "contenido"
+        "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 10px;
+    min-height: 100vh;
+}
+
+/* Aqui empiezan los estilos generales de header*/
+.header {
+    grid-area: header;
+    background-color: rgb(18, 18, 85);
+    height: 60px;
+    position: fixed;
+    width: 100%;
+}
+
+.flexbox-header {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 15px;
+}
+
+.flexbox-header-item {
+    margin-right: 15px;
+    margin-left: 30px;
+}
+
+.flexbox-header-item .logo {
+    height: 60px;
+}
+
+.flexbox-header-item nav ul {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.flexbox-header-item nav ul li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+
+}
+
+.flexbox-header-item nav ul li a {
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.flexbox-header-item nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.IconCarrito {
+    width: 32px;
+    height: 33px;
+    padding: 0;
+    filter: invert(97%) sepia(96%) saturate(7246%) hue-rotate(179deg) brightness(122%) contrast(101%);
+}
+
+/* Estilos del Menú Desplegable */
+.nav-list .menúDesplegable {
+    position: relative;
+}
+
+.nav-list .menúDesplegable-contenido {
+    display: none;
+    position: absolute;
+    background-color: rgb(18, 18, 85);
+    min-width: 200px;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    border-radius: 5px;
+    padding: 10px 0;
+}
+
+.nav-list .menúDesplegable-contenido li {
+    list-style: none;
+}
+
+.nav-list .menúDesplegable-contenido li a {
+    display: block;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.nav-list .menúDesplegable-contenido li a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #f0f0f0;
+    border-radius: 3px;
+}
+
+/* Mostrar el submenú cuando el usuario pasa el cursor */
+.nav-list .menúDesplegable:hover .menúDesplegable-contenido {
+    display: block;
+}
+
+.oculto {
+    display: none;
+}
+
+/* Aqui empliezan los estilos generales de main */
+.contenido {
+    grid-area: contenido;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.Titulo-centrado {
+    color: black;
+    text-align: center;
+    max-width: 100%;
+}
+
+.Parrafo-centrado {
+    margin: 20px;
+}
+
+/* Aqui empliezan los estilos de main del index.html*/
+.contenido .fondo-imagen {
+    display: flex;
+    background-image: url("../img/ImagenDeFondo.webp");
+    height: 90vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+    padding: 2vw;
+}
+
+.Sobre-nosotros {
+    display: grid;
+    justify-items: center;
+}
+
+.contenido .ContendorGrid-info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    justify-content: space-evenly;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.grid-info-item {
+    color: black; 
+    padding: 15px;
+    text-align: center;
+    border: 2px solid black;
+    width: 80%;
+    box-shadow: 0 4px 8px rgb(18, 18, 85);
+}
+
+/* Aqui empiezan los estilos de main del servicios.html*/
+#Contenedor-Servicios, #Contenedor-Productos {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: stretch;;
+}
+
+.servicio, .producto {
+    background-color: #fff;
+    width: 30%;
+    margin-bottom: 20px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgb(18, 18, 85);
+    box-sizing: border-box;
+}
+
+.servicio img, .producto img {
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.servicio video {
+    width: 100%; 
+    height: auto;
+    max-height: 100%; 
+    object-fit: cover; 
+}
+
+.boton {
+    background-color: rgb(18, 18, 85);
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgb(18, 18, 85);
+}
+
+.boton:hover {
+    background-color: rgb(112, 32, 32);
+}
+
+/* Aqui empliezan los estilos de main del contacto.html*/
+
+.Titulo-formulario {
+    text-align: center;
+   
+}
+
+.contacto {
+    display: grid;
+    grid-template-rows: auto auto;
+    gap: 2vw;
+    padding: 20px;
+    justify-items: center;
+}
+
+.Contenedor-formulario {
+    width: 70vw;
+}
+
+.input, .textarea {
+    width:100%;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    height: 30px;
+    box-shadow: 0 4px 8px rgb(18, 18, 85);
+}
+
+.textarea {
+    width: 100%;
+}
+
+
+.contenedor-mapa-datos {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-items: center;
+    gap: 2vw;
+}
+
+.mapa {
+    width: auto;
+    height: auto;
+    max-width: 100vh;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.datos {
+    display: flex;
+    flex-direction: column;
+}
+
+.datos ul {
+    list-style: none;
+    padding: 0;
+}
+
+.datos li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.datos li box-icon {
+    margin-right: 10px;
+}
+
+/* Aqui empliezan los estilos de main del carrito.html*/
+
+
+/*Aqui comienza el estilo general del footer*/
+.footer {
+    grid-area: footer;
+    background-color: rgb(18, 18, 85);
+    color: #ffffff;
+    text-align: center;
+}
+
+.footer section ul {
+    padding: 0;
+    margin-top: 0;
+}
+
+.footer .Social li {
+    background-color: transparent;
+    display: inline-block;
+    font-size: 1.5em;
+    margin-right: 10px;
+
+}
+
+.footer section h3 {
+    margin-bottom: 0;
+    padding-bottom: 15px;
+}
+
+.Icon {
+    filter: invert(97%) sepia(96%) saturate(7246%) hue-rotate(179deg) brightness(122%) contrast(101%);
+}
+
+.Icon:hover {
+    filter: invert(12%) sepia(34%) saturate(5851%) hue-rotate(350deg) brightness(96%) contrast(88%);
+}
+
+@media (min-width: 768px) and (max-width:1024px) {
+
+    /*estilos generales de main del index.html*/
+    .contenido .ContendorGrid-info {
+        grid-template-columns: 1fr 1fr;
+        gap: 5px;
+    }
+
+    .contenido .fondo-imagen {
+        height: 80vh;
+    }
+
+    .grid-info-item {
+        width: 80%;
+    }
+
+    /*estilos generales de main del servicios.html*/
+    .servicio, .producto {
+        width: 49%;
+    }
+
+    /*estilos generales de main del contacto.html*/
+
+    .Contenedor-formulario {
+        width: 80vw;
+    }
+
+}
+
+@media (max-width:767px) {
+
+    /* estilos generales del header */
+    .flexbox-header-item {
+        margin-right: 0;
+        margin-left: 5px;
+    }
+
+    /*estilos generales de main del index.html*/
+    .contenido .fondo-imagen {
+        height: 75vh;
+    }
+
+    .contenido .ContendorGrid-info {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .grid-info-item {
+        width: 70%;
+    }
+
+
+    /*estilos generales de main del servicios.html*/
+    #Contenedor-Servicios, #Contenedor-Productos {
+        padding: 10px;
+    }
+
+    .servicio, .producto {
+        width: 90%;
+        margin: 0 auto 20px;
+    }
+
+    /*estilos generales de main del contacto.html*/
+
+    .contacto {
+        padding: 2vw;
+    }
+    .Contenedor-formulario {
+        width: 80vw;
+    }
+
+    .contenedor-mapa-datos {
+        grid-template-columns: auto;
+    }
+
+    .mapa {
+        max-width: 90vw;
+    }
+}
+
+@media (max-width:400px) {
+
+    /* estilos generales del header */
+
+    .flexbox-header {
+        justify-content: space-around;
+        margin: 0;
+    }
+
+    .flexbox-header-item {
+        margin-left: 0;
+
+    }
+
+    .flexbox-header-item nav ul {
+        display: flex;
+        gap: 5px;
+        
+        padding: 0;
+    }
+
+    /*estilos generales de main del index.html*/
+    .contenido .fondo-imagen {
+        height: 50vh;
+    }
+
+    .Titulo-centrado {
+        max-width: 80%;
+        font-size: larger
+    }
+
+    .Parrafo-centrado {
+        margin: 5px;
+    }
+
+    .grid-info-item {
+        padding: 0;
+        width: 100%;
+    }
+
+    /* .Titulo-centrado {
+        
+    } */
+
+    .subtitulos {
+        font-size: small
+    }
+
+
+    /*estilos generales de main del servicios.html*/
+
+    #Contenedor-Servicios {
+        padding: 1px;
+    }
+    .servicio, .producto {
+        width: 100%;
+        padding: 1px;
+    }
+
+    .servicio img, .producto img {
+        width: 100%;
+    }
+
+    .Titulocentrado2 {
+        font-size: medium
+    }
+
+    /*estilos generales de main del contacto.html*/
+    
+    .contacto {
+        padding: 2vw;
+    }
+
+    .Contenedor-formulario {
+        width: 70vw;
+    }
+
+    .mapa iframe {
+        width: 90%; 
+        height: 90%;
+    }
+
+}
